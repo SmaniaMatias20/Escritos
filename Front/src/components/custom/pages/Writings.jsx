@@ -24,7 +24,7 @@ function Writings() {
 
 
     return (
-        <div className="w-full h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-white flex flex-col px-6">
+        <div className="w-full h-screen bg-white dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col px-6">
             <div className="flex flex-col gap-8 w-full p-8">
                 <h1 className="text-4xl font-semibold text-center">Escritos</h1>
                 <div className=''>

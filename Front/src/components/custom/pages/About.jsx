@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <div className="w-full h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-white flex flex-col px-6 py-12">
+        <div className="w-full h-screen bg-white dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col px-6 py-12">
 
             {/* Contenedor principal */}
             <div className="w-full max-w-full mx-auto space-y-12">

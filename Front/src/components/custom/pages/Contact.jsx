@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope, FaPhoneAlt, FaBook } f
 
 const Contact = () => {
     return (
-        <div className="w-full min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white flex flex-col justify-center text-center px-8 py-16">
+        <div className="w-full min-h-screen bg-gray-50 dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col justify-center text-center px-8 py-16">
 
             <div className="flex flex-col md:flex-row justify-between gap-16 border rounded-lg p-4 h-screen">
 
@@ -43,33 +43,33 @@ const Contact = () => {
 
                 {/* Formulario de Contacto */}
                 <div className="w-full md:w-1/2">
-                    <form className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md space-y-6 h-full">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Formulario de Contacto</h2>
+                    <form className="flex flex-col justify-center bg-gray-200 dark:bg-[#27015a] p-6 rounded-lg shadow-md space-y-6 h-full">
+                        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">Formulario de Contacto</h2>
                         <div className="flex flex-col">
-                            <label htmlFor="name" className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Nombre</label>
+                            <label htmlFor="name" className="text-left text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Nombre</label>
                             <input
                                 id="name"
                                 type="text"
-                                className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 required
                             />
                         </div>
 
                         <div className="flex flex-col">
-                            <label htmlFor="email" className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Correo Electrónico</label>
+                            <label htmlFor="email" className="text-left text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Correo Electrónico</label>
                             <input
                                 id="email"
                                 type="email"
-                                className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="h-12 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 required
                             />
                         </div>
 
                         <div className="flex flex-col">
-                            <label htmlFor="message" className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Mensaje</label>
+                            <label htmlFor="message" className="text-left text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Mensaje</label>
                             <textarea
                                 id="message"
-                                className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="h-96 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 rows="5"
                                 required
                             ></textarea>
@@ -77,7 +77,7 @@ const Contact = () => {
 
                         <button
                             type="submit"
-                            className="w-full py-3 bg-gray-700 hover:bg-gray-900 text-white font-semibold rounded-lg transition-colors duration-300"
+                            className="w-full py-3 bg-black dark:bg-[#1f0148] hover:bg-gray-900 text-white font-semibold rounded-lg transition-colors duration-300"
                         >
                             Enviar Mensaje
                         </button>
