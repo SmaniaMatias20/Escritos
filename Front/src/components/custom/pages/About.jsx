@@ -1,9 +1,50 @@
 import React from 'react';
-import Perfil from '../../../assets/img/perfil.webp'
+import Perfil from '../../../assets/img/perfil.webp';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '../../ui/carousel'; // Importamos los componentes del carrusel
+import portada1 from '../../../assets/img/portada1.jpg';
+import portada2 from '../../../assets/img/portada2.jpg';
+import portada3 from '../../../assets/img/portada3.jpg';
+import portada4 from '../../../assets/img/portada4.jpg';
+import portada5 from '../../../assets/img/portada5.jpg';
+
+
+
+const libros = [
+    {
+        titulo: 'Suspiros Robados',
+        autor: 'Autor del libro',
+        descripcion: 'Descripcion del libro',
+        img: portada1,
+    },
+    {
+        titulo: 'Antes de Diciembre',
+        autor: 'Autor del libro',
+        descripcion: 'Descripcion del libro',
+        img: portada2,
+    },
+    {
+        titulo: 'Sueños Enterrados',
+        autor: 'Autor del libro',
+        descripcion: 'Descripcion del libro',
+        img: portada3,
+    },
+    {
+        titulo: 'Tres Meses',
+        autor: 'Autor del libro',
+        descripcion: 'Descripcion del libro',
+        img: portada4,
+    },
+    {
+        titulo: 'Si Me Dices que No',
+        autor: 'Autor del libro',
+        descripcion: 'Descripcion del libro',
+        img: portada5,
+    },
+];
 
 function About() {
     return (
-        <div className="w-full h-screen bg-white dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col px-6 py-12">
+        <div className="w-full h-full bg-white dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col px-6 py-12">
 
             {/* Contenedor principal */}
             <div className="w-full max-w-full mx-auto space-y-12">
@@ -28,48 +69,42 @@ function About() {
                     {/* Imagen de perfil */}
                     <div className="flex justify-center md:w-1/3 mb-8 md:mb-0">
                         <img
-                            src={Perfil} // Reemplaza con la URL de tu imagen de perfil
+                            src={Perfil}
                             alt="Perfil"
                             className="w-72 h-72 rounded-full object-cover shadow-2xl"
                         />
                     </div>
                 </div>
 
-                {/* Sección de logros y proyectos destacados */}
-                <div className="w-full text-center">
-                    <h2 className="text-3xl font-semibold mb-6">Proyectos y Logros</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                        <div className="bg-gray-300 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold mb-3">Proyecto 1: [Título]</h3>
-                            <p className="text-base">
-                                Este es un proyecto literario en el que estoy trabajando actualmente, explorando temas de [tema relevante].
-                            </p>
-                        </div>
-                        <div className="bg-gray-300 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold mb-3">Logro 1: [Título]</h3>
-                            <p className="text-base">
-                                En este logro, publiqué un libro que ha sido reconocido por [algún reconocimiento o detalle relevante].
-                            </p>
-                        </div>
-                        <div className="bg-gray-300 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold mb-3">Proyecto 2: [Título]</h3>
-                            <p className="text-base">
-                                A través de este proyecto, he podido conectar con [algún grupo o comunidad], llevando mis escritos a nuevas audiencias.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {/* Sección de carrusel de libros favoritos */}
+                <div className="w-full text-center mt-6 p-8">
+                    <h2 className="text-3xl font-semibold mb-6">Mis Libros Favoritos</h2>
+                    <Carousel className="w-full">
+                        {/* CarouselContent envuelve todos los CarouselItems */}
+                        <CarouselContent className="p-8">
+                            {libros.map((libro, index) => (
+                                <CarouselItem key={index} className="flex justify-center items-center basis-1/3 transition-transform transform hover:scale-105">
+                                    <div className="flex flex-col w-72 justify-center items-center bg-gray-300 dark:bg-gray-800 rounded-lg p-4 shadow-2xl">
+                                        <img
+                                            src={libro.img}
+                                            alt={libro.titulo}
+                                            className="w-48 h-72 object-cover rounded-lg transition-transform transform"
+                                        />
+                                        <h3 className="text-xl font-semibold text-center">{libro.titulo}</h3>
+                                        <p className="text-center text-gray-500">{libro.autor}</p>
+                                        <p className="text-center text-sm text-gray-400">{libro.descripcion}</p>
+                                    </div>
 
-                {/* Sección de pasatiempos */}
-                <div className="w-full mt-12">
-                    <h2 className="text-3xl text-center font-semibold mb-6">Pasatiempos e Intereses</h2>
-                    <p className="text-lg">
-                        Cuando no estoy escribiendo, me gusta disfrutar de actividades como la lectura, el senderismo y el cine. Soy un apasionado de [algún tema, hobby o actividad], y siempre estoy buscando nuevas formas de enriquecer mi vida y mi creatividad.
-                    </p>
-                </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
 
+                        {/* Los botones para navegar entre los items */}
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
             </div>
-
         </div>
     );
 }

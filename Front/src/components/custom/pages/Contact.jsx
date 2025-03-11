@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="w-full min-h-screen bg-gray-50 dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col justify-center text-center px-8 py-16">
 
-            <div className="flex flex-col md:flex-row justify-between gap-16 rounded-lg p-4 h-screen">
+            <div className="flex flex-col md:flex-row justify-between gap-16 rounded-lg p-4 h-full">
 
                 {/* Información de contacto */}
                 <div className="flex flex-col items-center justify-center w-full md:w-1/2 space-y-6">
@@ -50,7 +50,7 @@ const Contact = () => {
                             <input
                                 id="name"
                                 type="text"
-                                className="px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 required
                             />
                         </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                             <input
                                 id="email"
                                 type="email"
-                                className="h-12 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="h-12 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800  border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 required
                             />
                         </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                             <label htmlFor="message" className="text-left text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Mensaje</label>
                             <textarea
                                 id="message"
-                                className="h-96 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                                className="h-96 px-4 py-2 rounded-lg bg-gray-300 dark:bg-white text-gray-800 border border-transparent focus:ring-2 focus:ring-gray-500 focus:outline-none"
                                 rows="5"
                                 required
                             ></textarea>
