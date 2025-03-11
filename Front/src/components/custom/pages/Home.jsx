@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Home = () => {
@@ -10,12 +11,16 @@ const Home = () => {
         Explora escritos y más en un entorno visualmente agradable. ¡Disfruta tu visita!
       </p>
       <div className="flex justify-center space-x-4">
-        <button className="px-6 py-3 bg-black dark:bg-white dark:text-black text-white rounded-full text-lg font-semibold transition duration-200 transform hover:scale-105">
-          Explorar Escritos
-        </button>
-        <button className="px-6 py-3 border-2 border-black dark:border-white dark:text-white text-black  rounded-full text-lg font-semibold transition duration-200 transform hover:scale-105">
-          Sobre Mi
-        </button>
+        <Link to="/writings">
+          <button className="px-6 py-3 bg-black dark:bg-white dark:text-black text-white rounded-full text-lg font-semibold transition duration-200 transform hover:scale-105">
+            Explorar Escritos
+          </button>
+        </Link>
+        <Link to="/about">
+          <button className="px-6 py-3 border-2 border-black dark:border-white dark:text-white text-black  rounded-full text-lg font-semibold transition duration-200 transform hover:scale-105">
+            Sobre Mi
+          </button>
+        </Link>
       </div>
     </div>
   );
