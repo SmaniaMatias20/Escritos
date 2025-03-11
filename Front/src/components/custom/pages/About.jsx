@@ -83,7 +83,7 @@ function About() {
                         {/* CarouselContent envuelve todos los CarouselItems */}
                         <CarouselContent className="p-8">
                             {libros.map((libro, index) => (
-                                <CarouselItem key={index} className="flex justify-center items-center basis-1/3 transition-transform transform hover:scale-105">
+                                <CarouselItem key={index} className="flex justify-center items-center sm:basis-1/3 transition-transform transform hover:scale-105">
                                     <div className="flex flex-col w-72 justify-center items-center bg-gray-300 dark:bg-gray-800 rounded-lg p-4 shadow-2xl">
                                         <img
                                             src={libro.img}
