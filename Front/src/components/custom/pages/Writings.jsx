@@ -6,19 +6,25 @@ function Writings() {
     // Example data for the writings (you could fetch this data from a database or an API)
     const writingsData = [
         {
-            title: "La Magia de Escribir",
-            description: "Un ensayo sobre cómo la escritura puede transformar vidas.",
+            title: "Tal vez no sean cuentos",
+            description: "Agregar descripcion del escrito.",
             date: "2025-03-10",
+            url: "https://www.wattpad.com/1415546112-tal-vez-no-sean-cuentos-sola",
+            ranking: 292
         },
         {
-            title: "Historias del Viento",
-            description: "Un cuento corto que explora los misterios de un pueblo en las montañas.",
+            title: "El regreso de Emily",
+            description: "Agregar descripcion del escrito.",
             date: "2025-02-25",
+            url: "https://www.wattpad.com/1449212121-el-regreso-de-emily-demonio",
+            ranking: 493
         },
         {
-            title: "Reflexiones Diarias",
-            description: "Una serie de reflexiones personales y pensamientos sobre la vida y la creatividad.",
+            title: "Escrito numero 3",
+            description: "Agregar descripcion del escrito numero 3.",
             date: "2025-01-18",
+            url: "https://www.wattpad.com/1415546112-tal-vez-no-sean-cuentos-sola",
+            ranking: 999
         },
     ];
 
@@ -35,6 +41,8 @@ function Writings() {
                             title={writing.title}
                             description={writing.description}
                             date={writing.date}
+                            url={writing.url}
+                            ranking={writing.ranking}
                         />
                     ))}
                 </div>

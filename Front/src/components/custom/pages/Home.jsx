@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-[#1f0148] text-black dark:text-white flex flex-col justify-center items-center text-center px-6 py-12">
       <h1 className="text-5xl font-extrabold leading-tight mb-4 animate__animated animate__fadeIn animate__delay-1s">
-        Bienvenido a mi Portfolio
+        Bienvenido/a a mi Portafolio
       </h1>
       <p className="text-lg sm:text-xl mb-8 animate__animated animate__fadeIn animate__delay-2s">
         Explora escritos y más en un entorno visualmente agradable. ¡Disfruta tu visita!

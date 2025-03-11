@@ -57,15 +57,16 @@ function About() {
                     {/* Descripción */}
                     <div className="md:w-2/3 text-lg text-center md:text-left max-w-full mx-auto">
                         <p className="mb-2">
-                            Soy un escritor que busca inspirar y conectar a través de las palabras. Mi trabajo abarca desde historias personales hasta narrativas más complejas.
+                            Soy una escritora que busca inspirar y conectar a través de las palabras. Mi trabajo abarca desde historias personales hasta narrativas más complejas.
                         </p>
                         <p className="mb-2">
                             Creo firmemente que la escritura tiene el poder de transformar ideas y emociones. Fuera de mis proyectos literarios, me encanta explorar el mundo, leer y disfrutar de la naturaleza.
                         </p>
                         <p className="mb-2">
-                            Mi objetivo como escritor es hacer que mis lectores vean el mundo desde una nueva perspectiva, fomentando la reflexión y la empatía. Disfruto contar historias que tocan temas profundos como la identidad, el amor y la superación.
+                            Mi objetivo como escritora es hacer que mis lectoras y lectores vean el mundo desde una nueva perspectiva, fomentando la reflexión y la empatía. Disfruto contar historias que tocan temas profundos como la identidad, el amor y la superación.
                         </p>
                     </div>
+
                     {/* Imagen de perfil */}
                     <div className="flex justify-center md:w-1/3 mb-8 md:mb-0">
                         <img
@@ -78,7 +79,7 @@ function About() {
 
                 {/* Sección de carrusel de libros favoritos */}
                 <div className="w-full text-center mt-6 p-8">
-                    <h2 className="text-3xl font-semibold mb-6">Mis Libros Favoritos</h2>
+                    <h2 className="text-3xl font-semibold mb-6">Mis Obras Favoritas</h2>
                     <Carousel className="w-full">
                         {/* CarouselContent envuelve todos los CarouselItems */}
                         <CarouselContent className="p-8">
