@@ -27,16 +27,16 @@ const Contact = () => {
                     {/* Redes Sociales */}
                     <div className="flex justify-center space-x-6 mt-6">
                         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="h-7 w-7 text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors" />
+                            <FaLinkedin className="h-7 w-7 text-black dark:text-gray-300 hover:text-sky-500 transition-colors" />
                         </a>
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="h-7 w-7 text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors" />
+                            <FaInstagram className="h-7 w-7 text-black dark:text-gray-300 hover:text-sky-500 transition-colors" />
                         </a>
                         <a href="https://www.wattpad.com" target="_blank" rel="noopener noreferrer">
-                            <FaBook className="h-7 w-7 text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors" />
+                            <FaBook className="h-7 w-7 text-black dark:text-gray-300 hover:text-sky-500 transition-colors" />
                         </a>
                         <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp className="h-7 w-7 text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors" />
+                            <FaWhatsapp className="h-7 w-7 text-black dark:text-gray-300 hover:text-sky-500 transition-colors" />
                         </a>
                     </div>
                 </div>
