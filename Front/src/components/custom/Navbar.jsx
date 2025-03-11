@@ -15,6 +15,11 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
+    // Función para cerrar el menú después de hacer clic en un enlace
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="bg-white dark:bg-[#1f0148] text-black dark:text-white shadow-md py-3 relative">
             <div className="max-w-7xl mx-auto px-4 flex justify-between items-center z-10">
@@ -23,10 +28,10 @@ function Navbar() {
 
                 {/* Menú de navegación */}
                 <div className={`flex items-center space-x-4 ${isOpen ? 'flex-col space-y-4 absolute top-full left-0 w-full bg-white dark:bg-[#1f0148] shadow-md z-20' : 'hidden'} md:flex md:space-x-4 md:flex-row transition-all duration-300 ease-in-out`}>
-                    <Link to="/" className="hover:text-gray-500">Inicio</Link>
-                    <Link to="/about" className="hover:text-gray-500">Sobre Mi</Link>
-                    <Link to="/writings" className="hover:text-gray-500">Escritos</Link>
-                    <Link to="/contact" className="hover:text-gray-500">Contacto</Link>
+                    <Link to="/" className="hover:text-gray-500" onClick={closeMenu}>Inicio</Link>
+                    <Link to="/about" className="hover:text-gray-500" onClick={closeMenu}>Sobre Mi</Link>
+                    <Link to="/writings" className="hover:text-gray-500" onClick={closeMenu}>Escritos</Link>
+                    <Link to="/contact" className="hover:text-gray-500" onClick={closeMenu}>Contacto</Link>
 
                     {/* Botón de cambio de tema */}
                     <ThemeToggle onClick={toggleDarkMode} isDarkMode={isDarkMode} />
