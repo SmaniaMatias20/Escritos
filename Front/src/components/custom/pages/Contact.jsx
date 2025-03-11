@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope, FaPhoneAlt, FaBook } f
 
 const Contact = () => {
     return (
-        <div className="w-full min-h-screen bg-gray-50 dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col justify-center text-center px-8 py-16">
+        <div className="w-full min-h-screen bg-gray-50 dark:bg-[#1f0148] text-gray-800 dark:text-white flex flex-col justify-center text-center sm:px-8 py-16">
 
             <div className="flex flex-col md:flex-row justify-between gap-16 rounded-lg p-4 h-full">
 
@@ -43,7 +43,7 @@ const Contact = () => {
 
                 {/* Formulario de Contacto */}
                 <div className="w-full md:w-1/2">
-                    <form className="flex flex-col justify-center bg-gray-200 dark:bg-[#27015a] p-6 rounded-lg shadow-md space-y-6 h-full">
+                    <form className="flex flex-col justify-center bg-gray-200 dark:bg-[#27015a] p-2 sm:p-6 rounded-lg shadow-md space-y-6 h-full">
                         <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">Formulario de Contacto</h2>
                         <div className="flex flex-col">
                             <label htmlFor="name" className="text-left text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Nombre</label>
