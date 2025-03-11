@@ -83,17 +83,15 @@ function About() {
                         {/* CarouselContent envuelve todos los CarouselItems */}
                         <CarouselContent className="p-8">
                             {libros.map((libro, index) => (
-                                <CarouselItem key={index} className="flex justify-center items-center sm:basis-1/3 transition-transform transform hover:scale-105">
-                                    <div className="flex flex-col w-72 justify-center items-center bg-gray-300 dark:bg-gray-800 rounded-lg p-4 shadow-2xl">
+                                <CarouselItem key={index} className="flex justify-center items-center sm:basis-1/3 transition-transform transform sm:hover:scale-105">
+                                    <div className="flex flex-col w-72 h-96 justify-center items-center bg-gray-300 dark:bg-gray-800 rounded-lg shadow-2xl overflow-hidden">
                                         <img
                                             src={libro.img}
                                             alt={libro.titulo}
-                                            className="w-48 h-72 object-cover rounded-lg transition-transform transform"
+                                            className="w-full h-full  rounded-lg"
                                         />
-                                        <h3 className="text-xl font-semibold text-center">{libro.titulo}</h3>
-                                        <p className="text-center text-gray-500">{libro.autor}</p>
-                                        <p className="text-center text-sm text-gray-400">{libro.descripcion}</p>
                                     </div>
+
 
                                 </CarouselItem>
                             ))}
